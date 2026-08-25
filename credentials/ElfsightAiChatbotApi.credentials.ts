@@ -11,7 +11,10 @@ export class ElfsightAiChatbotApi implements ICredentialType {
 
 	displayName = 'Elfsight AI Chatbot API';
 
-	icon: Icon = 'file:../nodes/ElfsightAiChatbot/elfsight.svg';
+	icon: Icon = {
+		light: 'file:../nodes/ElfsightAiChatbot/elfsight.svg',
+		dark: 'file:../nodes/ElfsightAiChatbot/elfsight.dark.svg',
+	};
 
 	documentationUrl = 'https://github.com/elfsight/n8n-nodes-elfsight-ai-chatbot#credentials';
 

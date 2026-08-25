@@ -11,7 +11,7 @@ export class ElfsightAiChatbot implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Elfsight AI Chatbot',
 		name: 'elfsightAiChatbot',
-		icon: 'file:elfsight.svg',
+		icon: { light: 'file:elfsight.svg', dark: 'file:elfsight.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

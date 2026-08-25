@@ -22,7 +22,7 @@ export class ElfsightAiChatbotTrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Elfsight AI Chatbot Trigger',
 		name: 'elfsightAiChatbotTrigger',
-		icon: 'file:elfsight.svg',
+		icon: { light: 'file:elfsight.svg', dark: 'file:elfsight.dark.svg' },
 		group: ['trigger'],
 		version: 1,
 		subtitle: '={{$parameter["event"]}}',
