@@ -1,2 +1,6 @@
 dist
 node_modules
+
+AGENTS.md
+CLAUDE.md
+.agents
