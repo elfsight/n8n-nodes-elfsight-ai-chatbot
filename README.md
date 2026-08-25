@@ -31,9 +31,25 @@ Output (one item per conversation):
 | `sourcePage` | Page the visitor chatted from |
 | `chatTopic`, `summary` | Post-analysis of the conversation |
 | `leadName`, `leadEmail`, `leadPhone` | Contact details, when the visitor left them |
-| `knowledgeGaps` | Questions the chatbot could not answer |
-| `transcript` | Full message list: `role`, `message`, `dateTime` |
+| `knowledgeGaps` | Questions the chatbot could not answer: `shortName`, `summary` |
+| `transcript` | Full message list — see the fields below |
 | `dashboardLink` | Direct link to the conversation in the Elfsight dashboard |
+
+Each `transcript` entry:
+
+| Field | Description |
+|---|---|
+| `role` | `User`, `AI Agent` or `System` |
+| `message` | Message text, markup stripped |
+| `dateTime` | ISO 8601 timestamp, may be `null` |
+| `rating` | `good` or `bad` if the visitor rated the answer, otherwise `null` |
+| `widgets` | Interactive widgets the assistant embedded in the message (empty for most messages) |
+| `attachments` | Files attached to the message (empty for most messages) |
+
+A `widgets` entry has `type` (`collectContacts`, `followUp`, `actionButtons` or `contactHuman`),
+`fields` (list of field labels), `buttons` (list of button labels) and `caption`.
+
+An `attachments` entry has `name`, `type` (`image` or `file`), `url` and `fileSize` in bytes.
 
 ### Elfsight AI Chatbot
 
