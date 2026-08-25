@@ -47,7 +47,7 @@ fields while building a workflow, without waiting for a live chat.
 2. Copy the API key (`elf_…`) — it is shown **only once**.
 3. In n8n create an *Elfsight AI Chatbot API* credential and paste the key.
 
-Leave **Base URL** at `https://data.elfsight.com/api` unless Elfsight gave you another endpoint.
+Leave **Base URL** at `https://widget-data.service.elfsight.com/api` unless Elfsight gave you another endpoint.
 Use **Test** to confirm the key: it calls `/ai-chat/v2/integrations/me` and shows the connected
 chatbot's name.
 

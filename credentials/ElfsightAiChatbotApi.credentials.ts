@@ -33,7 +33,7 @@ export class ElfsightAiChatbotApi implements ICredentialType {
 			displayName: 'Base URL',
 			name: 'baseUrl',
 			type: 'string',
-			default: 'https://data.elfsight.com/api',
+			default: 'https://widget-data.service.elfsight.com/api',
 			description: 'Change only if you were given a different Elfsight API endpoint',
 		},
 	];

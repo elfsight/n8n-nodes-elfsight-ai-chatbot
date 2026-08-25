@@ -13,7 +13,7 @@ export const CREDENTIALS_NAME = 'elfsightAiChatbotApi';
 /** Provider slug in the Elfsight integrations API. Every route below is scoped by it. */
 export const PROVIDER = 'n8n';
 
-const DEFAULT_BASE_URL = 'https://data.elfsight.com/api';
+const DEFAULT_BASE_URL = 'https://widget-data.service.elfsight.com/api';
 
 type ElfsightContext = IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions;
 
