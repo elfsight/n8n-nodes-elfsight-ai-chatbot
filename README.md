@@ -46,7 +46,7 @@ Each `transcript` entry:
 | `widgets` | Interactive widgets the assistant embedded in the message (empty for most messages) |
 | `attachments` | Files attached to the message (empty for most messages) |
 
-A `widgets` entry has `type` (`collectContacts`, `followUp`, `actionButtons` or `contactHuman`),
+A `widgets` entry has `type` (`collectContacts`, `actionButtons` or `contactHuman`),
 `fields` (list of field labels), `buttons` (list of button labels) and `caption`.
 
 An `attachments` entry has `name`, `type` (`image` or `file`), `url` and `fileSize` in bytes.
