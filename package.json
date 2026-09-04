@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-elfsight-ai-chatbot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for the Elfsight AI Chatbot: trigger on completed conversations and fetch recent ones",
   "license": "MIT",
   "homepage": "https://github.com/elfsight/n8n-nodes-elfsight-ai-chatbot",
@@ -14,7 +14,7 @@
   ],
   "author": {
     "name": "Elfsight",
-    "email": "help@elfsight.com"
+    "email": "info@elfsight.com"
   },
   "repository": {
     "type": "git",

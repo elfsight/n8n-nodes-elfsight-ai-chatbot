@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Use `info@elfsight.com` as the package author email.
+
 ## 0.1.1
 
 - Republish via GitHub Actions with npm provenance.
