@@ -87,15 +87,15 @@ export class ElfsightAiChatbot implements INodeType {
 			},
 			{
 				displayName: 'Limit',
-				name: 'limit',
+				name: 'maxResults',
 				type: 'number',
 				typeOptions: {
 					minValue: 1,
 					maxValue: 25,
 				},
-				// The endpoint hard-caps at 25 and has no pagination, so the usual default of 50
-				// would promise more than the API can ever return. 3 mirrors the server-side default.
-				// eslint-disable-next-line n8n-nodes-base/node-param-default-wrong-for-limit
+				// Named `maxResults`, not `limit`: n8n-nodes-base lints a `limit`-named parameter
+				// to always default to 50, but this endpoint hard-caps at 25 with no pagination.
+				// 3 mirrors the server-side default.
 				default: 3,
 				description: 'Max number of results to return',
 				displayOptions: {
