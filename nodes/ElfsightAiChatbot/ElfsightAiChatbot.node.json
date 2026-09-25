@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-elfsight-ai-chatbot",
+	"node": "n8n-nodes-elfsight-ai-chatbot.elfsightAiChatbot",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Marketing & Content", "Communication"],
